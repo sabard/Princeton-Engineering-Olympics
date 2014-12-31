@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <p id="time">0:00</p>
+    <table id="table">
+    </table>
+    <div>
+      <button id="start" onclick="start();"> Start!</button>
+      <form name="character" onsubmit="return(insertChar())">
+        <input id="characterInput" type="text" autocomplete="off" maxlength="1"></input>
+        <input type="submit" value="Submit"></input>
+      </form>
+      <div>
+        <button id="hint" onclick="hint()">Check answers</button>
+        <button id="restart" onclick="restart();"> Restart!</button>
+      </div>
+    </div>
+
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="crossed.js"></script>
+  </body>
+</html>
